@@ -29,6 +29,7 @@ body::after {
   left: 0;
   z-index: 1;
   display: flex;
+  display: none;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
