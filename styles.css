@@ -1,16 +1,39 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: 'Noto Serif JP', serif;
 }
 
 body {
+  position: relative;
   width: 100%;
   height: 100vh;
   margin: 0;
   overflow: hidden;
 }
 
-#display canvas {
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  background-color: rgba(133, 215, 255, 0.14);
+  animation: changeBackgroundColor 7200ms alternate infinite;
+}
+
+@keyframes changeBackgroundColor {
+  0% {
+    background-color: rgba(133, 215, 255, 0.09);
+  }
+  30% {
+    background-color: rgba(72, 219, 251, 0.1);
+  }
+  70% {
+    background-color: rgba(rgb(29, 209, 161), 0.08);
+  }
+  0% {
+    background-color: rgba(133, 215, 255, 0.13);
+  }
 }
