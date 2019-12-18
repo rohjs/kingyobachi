@@ -7,11 +7,11 @@
 
 /* Define constants */
 const BACKGROUND_COLOR = 0
-const FRAME_RATE = 40
+const FRAME_RATE = 45
 const FISH = []
 const NUM_DOTS = 100
-const NUM_FISH = 1
-const FISH_SIZE = 50
+const NUM_FISH = 7
+const FISH_SIZE = 20
 
 /* Setup canvas */
 function setup() {
@@ -24,7 +24,7 @@ function setup() {
     FISH.push(
       new Fish({
         position: new p5.Vector(random(windowWidth), random(windowHeight)),
-        length: size * 3.5,
+        length: size * 2.4,
         width: size,
         numSegments: 20,
         maxAvoidanceForce: 10,
