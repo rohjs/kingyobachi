@@ -19,8 +19,7 @@ body::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(133, 215, 255, 0.14);
-  animation: changeBackgroundColor 7200ms alternate infinite;
+  animation: changeBackgroundColor 5000ms alternate infinite;
 }
 
 .header {
@@ -29,7 +28,6 @@ body::after {
   left: 0;
   z-index: 1;
   display: flex;
-  display: none;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
@@ -57,15 +55,15 @@ body::after {
 
 @keyframes changeBackgroundColor {
   0% {
-    background-color: rgba(133, 215, 255, 0.09);
+    background-color: rgba(133, 215, 255, 0.02);
   }
   30% {
-    background-color: rgba(72, 219, 251, 0.1);
+    background-color: rgba(72, 219, 251, 0.03);
   }
   70% {
-    background-color: rgba(rgb(29, 209, 161), 0.08);
+    background-color: rgba(29, 209, 161, 0.04);
   }
   0% {
-    background-color: rgba(133, 215, 255, 0.13);
+    background-color: rgba(133, 215, 255, 0.04);
   }
 }
