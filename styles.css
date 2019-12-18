@@ -23,6 +23,37 @@ body::after {
   animation: changeBackgroundColor 7200ms alternate infinite;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  padding: 32px 28px;
+  color: #fff;
+}
+
+.title {
+  margin-bottom: 4px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.title span {
+  display: block;
+}
+
+.copyright {
+  font-size: 10px;
+  font-weight: 400;
+  opacity: 0.75;
+}
+
 @keyframes changeBackgroundColor {
   0% {
     background-color: rgba(133, 215, 255, 0.09);
